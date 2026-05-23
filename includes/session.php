@@ -43,7 +43,7 @@ if (isset($_SESSION['last_activity']) && (time() - $_SESSION['last_activity']) >
     session_destroy();
     session_start();
     $_SESSION['flash_error'] = "Your session has expired due to inactivity. Please log in again.";
-    header('Location: /tourism-agency/public/login.php');
+    header('Location: /issighen/public/auth/login.php');
     exit;
 }
 $_SESSION['last_activity'] = time();
@@ -77,4 +77,3 @@ if (!isset($_SESSION['user_id']) && isset($_COOKIE['remember_me'])) {
         }
     }
 }
-?>

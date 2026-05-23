@@ -40,7 +40,7 @@ $filtered = $statusFilter === 'all' ? $sampleReservations :
                 <a href="../contacts/index.php?lang=<?= $lang ?>"><span class="nav-icon"><i class="fas fa-envelope"></i></span><?= $lang === 'ar' ? 'الرسائل' : ($lang === 'fr' ? 'Messages' : 'Messages') ?></a>
             </nav>
             <div class="sidebar-footer">
-                <a href="../../auth/logout.php"><i class="fas fa-sign-out-alt"></i><?= htmlspecialchars($t['nav_logout']) ?></a>
+                <a href="/issighen/public/auth/logout.php"><i class="fas fa-sign-out-alt"></i><?= htmlspecialchars($t['nav_logout']) ?></a>
             </div>
         </aside>
         <div class="sidebar-overlay" id="sidebarOverlay"></div>

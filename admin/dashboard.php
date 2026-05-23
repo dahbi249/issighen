@@ -73,7 +73,7 @@ $adminName = htmlspecialchars($_SESSION['name'] ?? 'Admin');
                     <i class="fas fa-external-link-alt"></i>
                     <?= $lang === 'ar' ? 'عرض الموقع' : ($lang === 'fr' ? 'Voir le site' : 'View Site') ?>
                 </a>
-                <a href="../auth/logout.php">
+                <a href="/issighen/public/auth/logout.php">
                     <i class="fas fa-sign-out-alt"></i>
                     <?= htmlspecialchars($t['nav_logout']) ?>
                 </a>

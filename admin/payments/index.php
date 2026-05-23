@@ -54,7 +54,7 @@ $methodLabel = fn($m) => match ($m) {
                 <a href="index.php?lang=<?= $lang ?>" class="active"><span class="nav-icon"><i class="fas fa-wallet"></i></span><?= $lang === 'ar' ? 'المدفوعات' : ($lang === 'fr' ? 'Paiements' : 'Payments') ?></a>
             </nav>
             <div class="sidebar-footer">
-                <a href="../../auth/logout.php"><i class="fas fa-sign-out-alt"></i><?= htmlspecialchars($t['nav_logout']) ?></a>
+                <a href="/issighen/public/auth/logout.php"><i class="fas fa-sign-out-alt"></i><?= htmlspecialchars($t['nav_logout']) ?></a>
             </div>
         </aside>
         <div class="sidebar-overlay" id="sidebarOverlay"></div>

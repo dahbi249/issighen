@@ -1,5 +1,6 @@
 <!-- includes/footer.php — Site Footer (variables $lang, $t, $dir must be set by the calling page) -->
-<?php $t = $t ?? []; $lang = $lang ?? 'ar'; ?>
+<?php $t = $t ?? [];
+$lang = $lang ?? 'ar'; ?>
 <footer class="footer">
     <div class="container">
         <div class="footer-grid">
@@ -21,11 +22,11 @@
             <div class="footer-col">
                 <h4><?= htmlspecialchars($t['footer_links'] ?? 'Quick Links') ?></h4>
                 <ul class="footer-links">
-                    <li><a href="/tourism-agency/public/pages/home.php"><i class="fas fa-chevron-right" style="font-size:.7rem;"></i> <?= htmlspecialchars($t['nav_home']    ?? 'Home') ?></a></li>
-                    <li><a href="/tourism-agency/public/pages/offers.php"><i class="fas fa-chevron-right" style="font-size:.7rem;"></i> <?= htmlspecialchars($t['nav_offers']  ?? 'Offers') ?></a></li>
-                    <li><a href="/tourism-agency/public/pages/offers.php?cat=umrah"><i class="fas fa-chevron-right" style="font-size:.7rem;"></i> <?= htmlspecialchars($t['nav_umrah']   ?? 'Umrah') ?></a></li>
-                    <li><a href="/tourism-agency/public/pages/about.php"><i class="fas fa-chevron-right" style="font-size:.7rem;"></i> <?= htmlspecialchars($t['nav_about']   ?? 'About') ?></a></li>
-                    <li><a href="/tourism-agency/public/pages/contact.php"><i class="fas fa-chevron-right" style="font-size:.7rem;"></i> <?= htmlspecialchars($t['nav_contact'] ?? 'Contact') ?></a></li>
+                    <li><a href="/"><i class="fas fa-chevron-right" style="font-size:.7rem;"></i> <?= htmlspecialchars($t['nav_home']    ?? 'Home') ?></a></li>
+                    <li><a href="/issighen/public/pages/offers.php"><i class="fas fa-chevron-right" style="font-size:.7rem;"></i> <?= htmlspecialchars($t['nav_offers']  ?? 'Offers') ?></a></li>
+                    <li><a href="/issighen/public/pages/offers.php?cat=umrah"><i class="fas fa-chevron-right" style="font-size:.7rem;"></i> <?= htmlspecialchars($t['nav_umrah']   ?? 'Umrah') ?></a></li>
+                    <li><a href="/issighen/public/pages/about.php"><i class="fas fa-chevron-right" style="font-size:.7rem;"></i> <?= htmlspecialchars($t['nav_about']   ?? 'About') ?></a></li>
+                    <li><a href="/issighen/public/pages/contact.php"><i class="fas fa-chevron-right" style="font-size:.7rem;"></i> <?= htmlspecialchars($t['nav_contact'] ?? 'Contact') ?></a></li>
                 </ul>
             </div>
 
@@ -33,11 +34,11 @@
             <div class="footer-col">
                 <h4><?= htmlspecialchars($t['nav_services'] ?? 'Services') ?></h4>
                 <ul class="footer-links">
-                    <li><a href="/tourism-agency/public/pages/offers.php?cat=umrah"><i class="fas fa-chevron-right" style="font-size:.7rem;"></i> <?= htmlspecialchars($t['service_umrah']   ?? 'Umrah & Hajj') ?></a></li>
-                    <li><a href="/tourism-agency/public/pages/offers.php?cat=tourism"><i class="fas fa-chevron-right" style="font-size:.7rem;"></i> <?= htmlspecialchars($t['service_tourism'] ?? 'Tourism') ?></a></li>
-                    <li><a href="/tourism-agency/public/pages/offers.php?cat=hotel"><i class="fas fa-chevron-right" style="font-size:.7rem;"></i> <?= htmlspecialchars($t['service_hotels']   ?? 'Hotels') ?></a></li>
-                    <li><a href="/tourism-agency/public/pages/offers.php?cat=flight"><i class="fas fa-chevron-right" style="font-size:.7rem;"></i> <?= htmlspecialchars($t['service_flights']  ?? 'Flights') ?></a></li>
-                    <li><a href="/tourism-agency/public/pages/offers.php?cat=visa"><i class="fas fa-chevron-right" style="font-size:.7rem;"></i> <?= htmlspecialchars($t['service_visa']     ?? 'Visa') ?></a></li>
+                    <li><a href="/issighen/public/pages/offers.php?cat=umrah"><i class="fas fa-chevron-right" style="font-size:.7rem;"></i> <?= htmlspecialchars($t['service_umrah']   ?? 'Umrah & Hajj') ?></a></li>
+                    <li><a href="/issighen/public/pages/offers.php?cat=tourism"><i class="fas fa-chevron-right" style="font-size:.7rem;"></i> <?= htmlspecialchars($t['service_tourism'] ?? 'Tourism') ?></a></li>
+                    <li><a href="/issighen/public/pages/offers.php?cat=hotel"><i class="fas fa-chevron-right" style="font-size:.7rem;"></i> <?= htmlspecialchars($t['service_hotels']   ?? 'Hotels') ?></a></li>
+                    <li><a href="/issighen/public/pages/offers.php?cat=flight"><i class="fas fa-chevron-right" style="font-size:.7rem;"></i> <?= htmlspecialchars($t['service_flights']  ?? 'Flights') ?></a></li>
+                    <li><a href="/issighen/public/pages/offers.php?cat=visa"><i class="fas fa-chevron-right" style="font-size:.7rem;"></i> <?= htmlspecialchars($t['service_visa']     ?? 'Visa') ?></a></li>
                 </ul>
             </div>
 
@@ -70,9 +71,9 @@
         <div class="footer-bottom">
             <span>&copy; <?= date('Y') ?> <?= htmlspecialchars($t['site_name'] ?? 'Isighène') ?> — <?= htmlspecialchars($t['copyright'] ?? 'All rights reserved') ?></span>
             <div class="lang-switcher" style="background:rgba(255,255,255,.07);">
-                <a href="?lang=ar" style="color:rgba(255,255,255,.55);" class="<?= $lang==='ar' ? 'active-lang':'' ?>">AR</a>
-                <a href="?lang=fr" style="color:rgba(255,255,255,.55);" class="<?= $lang==='fr' ? 'active-lang':'' ?>">FR</a>
-                <a href="?lang=en" style="color:rgba(255,255,255,.55);" class="<?= $lang==='en' ? 'active-lang':'' ?>">EN</a>
+                <a href="?lang=ar" style="color:rgba(255,255,255,.55);" class="<?= $lang === 'ar' ? 'active-lang' : '' ?>">AR</a>
+                <a href="?lang=fr" style="color:rgba(255,255,255,.55);" class="<?= $lang === 'fr' ? 'active-lang' : '' ?>">FR</a>
+                <a href="?lang=en" style="color:rgba(255,255,255,.55);" class="<?= $lang === 'en' ? 'active-lang' : '' ?>">EN</a>
             </div>
         </div>
     </div>
