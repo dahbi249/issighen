@@ -98,11 +98,9 @@ try {
     set_flash_message('success', $t['success_profile_updated']);
     header('Location: edit.php?id=' . $user_id . '&lang=' . $lang);
     exit;
-
 } catch (PDOException $e) {
     error_log('User edit error: ' . $e->getMessage());
     set_flash_message('error', $t['error_profile_update_failed']);
     header('Location: edit.php?id=' . $user_id . '&lang=' . $lang);
     exit;
 }
-?>

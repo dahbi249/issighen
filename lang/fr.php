@@ -155,7 +155,7 @@ return [
     'travelers_add'      => 'Ajouter un Voyageur',
     'travelers_name'     => 'Nom Complet',
     'travelers_passport' => 'N° Passeport',
-    'travelers_birthdate'=> 'Date de Naissance',
+    'travelers_birthdate' => 'Date de Naissance',
     'travelers_relation' => 'Lien de Parenté',
     'travelers_none'     => 'Aucun voyageur ajouté',
     'rel_self'     => 'Moi-même',
@@ -200,9 +200,9 @@ return [
     'no_results'  => 'Aucun résultat',
     'actions'     => 'Actions',
     'copyright'   => 'Tous droits réservés',
-    'footer_links'=> 'Liens Rapides',
-    'footer_about'=> 'À Propos',
-    'footer_social'=> 'Suivez-nous',
+    'footer_links' => 'Liens Rapides',
+    'footer_about' => 'À Propos',
+    'footer_social' => 'Suivez-nous',
     'lang_ar'     => 'العربية',
     'lang_fr'     => 'Français',
     'lang_en'     => 'English',
@@ -215,12 +215,12 @@ return [
     'phone'       => 'Téléphone',
     'category_umrah'  => 'Omra',
     'category_hajj'   => 'Hajj',
-    'category_tourism'=> 'Tourisme',
+    'category_tourism' => 'Tourisme',
     'category_visa'   => 'Visa',
     'category_hotel'  => 'Hôtel',
     'category_flight' => 'Vol',
     'category_car'    => 'Voiture',
-    
+
     // Messages d'erreur
     'error_required_field' => 'Ce champ est obligatoire.',
     'error_invalid_email' => 'Veuillez entrer une adresse e-mail valide.',
@@ -242,14 +242,14 @@ return [
     'error_not_found' => 'L\'élément demandé n\'a pas été trouvé.',
     'error_database' => 'Une erreur s\'est produite lors du traitement de votre demande. Veuillez réessayer.',
     'error_email_send' => 'Échec de l\'envoi de l\'e-mail. Veuillez réessayer plus tard.',
-    
+
     // Erreurs du formulaire de contact
     'error_contact_name_required' => 'Veuillez entrer votre nom.',
     'error_contact_email_required' => 'Veuillez entrer votre adresse e-mail.',
     'error_contact_message_required' => 'Veuillez entrer votre message.',
     'error_contact_message_short' => 'Le message doit contenir au moins 10 caractères.',
     'error_contact_send_failed' => 'Échec de l\'envoi de votre message. Veuillez réessayer.',
-    
+
     // Erreurs du formulaire de voyageur
     'error_traveler_name_required' => 'Le nom du voyageur est obligatoire.',
     'error_traveler_name_too_short' => 'Le nom du voyageur doit contenir au moins 2 caractères.',
@@ -259,7 +259,7 @@ return [
     'error_traveler_add_failed' => 'Échec de l\'ajout du voyageur. Veuillez réessayer.',
     'error_traveler_update_failed' => 'Échec de la mise à jour du voyageur. Veuillez réessayer.',
     'error_traveler_delete_failed' => 'Échec de la suppression du voyageur. Veuillez réessayer.',
-    
+
     // Erreurs du formulaire d\'offre
     'error_offer_title_required' => 'Veuillez entrer le titre de l\'offre.',
     'error_offer_description_required' => 'Veuillez entrer la description de l\'offre.',
@@ -273,7 +273,7 @@ return [
     'error_offer_add_failed' => 'Échec de la création de l\'offre. Veuillez réessayer.',
     'error_offer_update_failed' => 'Échec de la mise à jour de l\'offre. Veuillez réessayer.',
     'error_offer_delete_failed' => 'Échec de la suppression de l\'offre. Veuillez réessayer.',
-    
+
     // Erreurs de réservation
     'error_reservation_name_required' => 'Veuillez entrer votre nom complet.',
     'error_reservation_email_required' => 'Veuillez entrer votre adresse e-mail.',
@@ -283,14 +283,14 @@ return [
     'error_reservation_offer_required' => 'Veuillez sélectionner une offre de voyage.',
     'error_reservation_date_required' => 'Veuillez sélectionner une date de départ.',
     'error_reservation_create_failed' => 'Échec de la création de la réservation. Veuillez réessayer.',
-    
+
     // Erreurs du profil utilisateur
     'error_profile_name_required' => 'Le nom est obligatoire.',
     'error_profile_email_required' => 'L\'e-mail est obligatoire.',
     'error_profile_update_failed' => 'Échec de la mise à jour du profil. Veuillez réessayer.',
     'error_password_current_incorrect' => 'Le mot de passe actuel est incorrect.',
     'error_password_change_failed' => 'Échec du changement de mot de passe. Veuillez réessayer.',
-    
+
     // Messages de succès
     'success_contact_sent' => 'Votre message a été envoyé avec succès. Nous vous répondrons bientôt!',
     'success_traveler_added' => 'Voyageur ajouté avec succès.',
@@ -303,7 +303,7 @@ return [
     'success_profile_updated' => 'Profil mis à jour avec succès.',
     'success_password_changed' => 'Mot de passe changé avec succès.',
     'success_email_verified' => 'E-mail vérifié avec succès.',
-    
+
     // Messages d\'avertissement
     'warning_confirm_delete' => 'Êtes-vous sûr de vouloir supprimer cet élément? Cette action ne peut pas être annulée.',
     'warning_unsaved_changes' => 'Vous avez des modifications non enregistrées. Êtes-vous sûr de vouloir partir?',

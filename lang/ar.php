@@ -93,7 +93,7 @@ return [
     'contact_address'   => 'العنوان',
     'contact_social'    => 'تابعنا على',
     'contact_map'       => 'موقعنا على الخريطة',
-    'contact_form_title'=> 'أرسل لنا رسالة',
+    'contact_form_title' => 'أرسل لنا رسالة',
     'contact_subject'   => 'الموضوع',
     // About
     'about_title'    => 'من نحن',
@@ -113,7 +113,7 @@ return [
     'why_prices'      => 'أفضل الأسعار',
     'why_prices_text' => 'عروض حصرية بأسعار لا تُنافس',
     'why_service'     => 'خدمة متميزة',
-    'why_service_text'=> '24/7 نحن في خدمتكم طوال اليوم',
+    'why_service_text' => '24/7 نحن في خدمتكم طوال اليوم',
     'why_trust'       => 'ثقة وأمان',
     'why_trust_text'  => 'آلاف العملاء يثقون بنا في رحلاتهم',
     // Dashboard
@@ -134,7 +134,7 @@ return [
     'booking_email'          => 'البريد الإلكتروني',
     'booking_phone'          => 'رقم الهاتف',
     'booking_passport'       => 'رقم جواز السفر',
-    'booking_travelers_count'=> 'عدد المسافرين',
+    'booking_travelers_count' => 'عدد المسافرين',
     'booking_notes'          => 'ملاحظات إضافية',
     'booking_summary'        => 'ملخص الحجز',
     'booking_confirm'        => 'تأكيد الحجز',
@@ -202,7 +202,7 @@ return [
     'copyright'    => 'جميع الحقوق محفوظة',
     'footer_links' => 'روابط سريعة',
     'footer_about' => 'عن الوكالة',
-    'footer_social'=> 'تابعنا',
+    'footer_social' => 'تابعنا',
     'lang_ar'      => 'العربية',
     'lang_fr'      => 'Français',
     'lang_en'      => 'English',
@@ -215,12 +215,12 @@ return [
     'phone'        => 'الهاتف',
     'category_umrah'  => 'عمرة',
     'category_hajj'   => 'حج',
-    'category_tourism'=> 'سياحة',
+    'category_tourism' => 'سياحة',
     'category_visa'   => 'فيزا',
     'category_hotel'  => 'فندق',
     'category_flight' => 'طيران',
     'category_car'    => 'سيارة',
-    
+
     // رسائل الخطأ
     'error_required_field' => 'هذا الحقل مطلوب.',
     'error_invalid_email' => 'يرجى إدخال عنوان بريد إلكتروني صحيح.',
@@ -242,14 +242,14 @@ return [
     'error_not_found' => 'العنصر المطلوب لم يتم العثور عليه.',
     'error_database' => 'حدث خطأ أثناء معالجة طلبك. يرجى المحاولة مرة أخرى.',
     'error_email_send' => 'فشل إرسال البريد الإلكتروني. يرجى المحاولة لاحقاً.',
-    
+
     // أخطاء نموذج الاتصال
     'error_contact_name_required' => 'يرجى إدخال اسمك.',
     'error_contact_email_required' => 'يرجى إدخال عنوان بريدك الإلكتروني.',
     'error_contact_message_required' => 'يرجى إدخال رسالتك.',
     'error_contact_message_short' => 'الرسالة يجب أن تكون 10 أحرف على الأقل.',
     'error_contact_send_failed' => 'فشل إرسال رسالتك. يرجى المحاولة مرة أخرى.',
-    
+
     // أخطاء نموذج المرافقين
     'error_traveler_name_required' => 'اسم المرافق مطلوب.',
     'error_traveler_name_too_short' => 'اسم المرافق يجب أن يكون على الأقل حرفين.',
@@ -259,7 +259,7 @@ return [
     'error_traveler_add_failed' => 'فشل إضافة المرافق. يرجى المحاولة مرة أخرى.',
     'error_traveler_update_failed' => 'فشل تحديث المرافق. يرجى المحاولة مرة أخرى.',
     'error_traveler_delete_failed' => 'فشل حذف المرافق. يرجى المحاولة مرة أخرى.',
-    
+
     // أخطاء نموذج العروض
     'error_offer_title_required' => 'يرجى إدخال عنوان العرض.',
     'error_offer_description_required' => 'يرجى إدخال وصف العرض.',
@@ -273,7 +273,7 @@ return [
     'error_offer_add_failed' => 'فشل إنشاء العرض. يرجى المحاولة مرة أخرى.',
     'error_offer_update_failed' => 'فشل تحديث العرض. يرجى المحاولة مرة أخرى.',
     'error_offer_delete_failed' => 'فشل حذف العرض. يرجى المحاولة مرة أخرى.',
-    
+
     // أخطاء الحجز
     'error_reservation_name_required' => 'يرجى إدخال اسمك الكامل.',
     'error_reservation_email_required' => 'يرجى إدخال عنوان بريدك الإلكتروني.',
@@ -283,14 +283,14 @@ return [
     'error_reservation_offer_required' => 'يرجى اختيار عرض سياحي.',
     'error_reservation_date_required' => 'يرجى اختيار تاريخ المغادرة.',
     'error_reservation_create_failed' => 'فشل إنشاء الحجز. يرجى المحاولة مرة أخرى.',
-    
+
     // أخطاء ملف المستخدم الشخصي
     'error_profile_name_required' => 'الاسم مطلوب.',
     'error_profile_email_required' => 'البريد الإلكتروني مطلوب.',
     'error_profile_update_failed' => 'فشل تحديث الملف الشخصي. يرجى المحاولة مرة أخرى.',
     'error_password_current_incorrect' => 'كلمة المرور الحالية غير صحيحة.',
     'error_password_change_failed' => 'فشل تغيير كلمة المرور. يرجى المحاولة مرة أخرى.',
-    
+
     // رسائل النجاح
     'success_contact_sent' => 'تم إرسال رسالتك بنجاح. سنرد عليك قريباً!',
     'success_traveler_added' => 'تمت إضافة المرافق بنجاح.',
@@ -303,7 +303,7 @@ return [
     'success_profile_updated' => 'تم تحديث الملف الشخصي بنجاح.',
     'success_password_changed' => 'تم تغيير كلمة المرور بنجاح.',
     'success_email_verified' => 'تم التحقق من البريد الإلكتروني بنجاح.',
-    
+
     // رسائل التحذير
     'warning_confirm_delete' => 'هل أنت متأكد من رغبتك في حذف هذا العنصر؟ لا يمكن التراجع عن هذا الإجراء.',
     'warning_unsaved_changes' => 'لديك تغييرات لم يتم حفظها. هل أنت متأكد من رغبتك في المغادرة؟',

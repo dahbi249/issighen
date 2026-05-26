@@ -106,7 +106,6 @@ try {
 
     header('Location: travelers.php?lang=' . $lang);
     exit;
-
 } catch (PDOException $e) {
     error_log('Traveler form error: ' . $e->getMessage());
     if ($action === 'edit') {
@@ -117,4 +116,3 @@ try {
     header('Location: travelers.php?lang=' . $lang);
     exit;
 }
-?>

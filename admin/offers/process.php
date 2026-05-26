@@ -138,10 +138,20 @@ try {
             WHERE id = ?
         ");
         $stmt->execute([
-            $title_ar, $title_fr, $title_en,
-            $desc_ar, $desc_fr, $desc_en,
-            $category, $price, $days, $location,
-            $status, $featured, $final_image, $offer_id
+            $title_ar,
+            $title_fr,
+            $title_en,
+            $desc_ar,
+            $desc_fr,
+            $desc_en,
+            $category,
+            $price,
+            $days,
+            $location,
+            $status,
+            $featured,
+            $final_image,
+            $offer_id
         ]);
 
         set_flash_message('success', $t['success_offer_updated']);
@@ -154,17 +164,25 @@ try {
             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, NOW(), NOW())
         ");
         $stmt->execute([
-            $title_ar, $title_fr, $title_en,
-            $desc_ar, $desc_fr, $desc_en,
-            $category, $price, $days, $location,
-            $status, $featured, $image_filename
+            $title_ar,
+            $title_fr,
+            $title_en,
+            $desc_ar,
+            $desc_fr,
+            $desc_en,
+            $category,
+            $price,
+            $days,
+            $location,
+            $status,
+            $featured,
+            $image_filename
         ]);
 
         set_flash_message('success', $t['success_offer_created']);
         header('Location: index.php?lang=' . $lang);
     }
     exit;
-
 } catch (PDOException $e) {
     error_log('Offer form error: ' . $e->getMessage());
     if ($is_edit) {
@@ -176,4 +194,3 @@ try {
     }
     exit;
 }
-?>

@@ -232,7 +232,7 @@ return [
     'category_hotel'  => 'Hotel',
     'category_flight' => 'Flight',
     'category_car'    => 'Car',
-    
+
     // Error Messages
     'error_required_field' => 'This field is required.',
     'error_invalid_email' => 'Please enter a valid email address.',
@@ -254,14 +254,14 @@ return [
     'error_not_found' => 'The requested item was not found.',
     'error_database' => 'An error occurred while processing your request. Please try again.',
     'error_email_send' => 'Failed to send email. Please try again later.',
-    
+
     // Contact Form Errors
     'error_contact_name_required' => 'Please enter your name.',
     'error_contact_email_required' => 'Please enter your email address.',
     'error_contact_message_required' => 'Please enter your message.',
     'error_contact_message_short' => 'Message must be at least 10 characters long.',
     'error_contact_send_failed' => 'Failed to send your message. Please try again.',
-    
+
     // Traveler Form Errors
     'error_traveler_name_required' => 'Traveler name is required.',
     'error_traveler_name_too_short' => 'Traveler name must be at least 2 characters.',
@@ -271,7 +271,7 @@ return [
     'error_traveler_add_failed' => 'Failed to add traveler. Please try again.',
     'error_traveler_update_failed' => 'Failed to update traveler. Please try again.',
     'error_traveler_delete_failed' => 'Failed to delete traveler. Please try again.',
-    
+
     // Offer Form Errors
     'error_offer_title_required' => 'Please enter the offer title.',
     'error_offer_description_required' => 'Please enter the offer description.',
@@ -285,7 +285,7 @@ return [
     'error_offer_add_failed' => 'Failed to create offer. Please try again.',
     'error_offer_update_failed' => 'Failed to update offer. Please try again.',
     'error_offer_delete_failed' => 'Failed to delete offer. Please try again.',
-    
+
     // Reservation Errors
     'error_reservation_name_required' => 'Please enter your full name.',
     'error_reservation_email_required' => 'Please enter your email address.',
@@ -295,14 +295,14 @@ return [
     'error_reservation_offer_required' => 'Please select a travel offer.',
     'error_reservation_date_required' => 'Please select a departure date.',
     'error_reservation_create_failed' => 'Failed to create reservation. Please try again.',
-    
+
     // User Profile Errors
     'error_profile_name_required' => 'Name is required.',
     'error_profile_email_required' => 'Email is required.',
     'error_profile_update_failed' => 'Failed to update profile. Please try again.',
     'error_password_current_incorrect' => 'Current password is incorrect.',
     'error_password_change_failed' => 'Failed to change password. Please try again.',
-    
+
     // Success Messages
     'success_contact_sent' => 'Your message has been sent successfully. We will respond soon!',
     'success_traveler_added' => 'Traveler added successfully.',
@@ -315,7 +315,7 @@ return [
     'success_profile_updated' => 'Profile updated successfully.',
     'success_password_changed' => 'Password changed successfully.',
     'success_email_verified' => 'Email verified successfully.',
-    
+
     // Warning Messages
     'warning_confirm_delete' => 'Are you sure you want to delete this item? This action cannot be undone.',
     'warning_unsaved_changes' => 'You have unsaved changes. Are you sure you want to leave?',

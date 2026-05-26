@@ -108,45 +108,45 @@ try {
 
     $user_body = ($lang === 'ar'
         ? "<h3>شكراً على حجزك معنا</h3>"
-            . "<p>مرحباً " . htmlspecialchars($full_name, ENT_QUOTES, 'UTF-8') . ",</p>"
-            . "<p>تم استقبال طلب الحجز الخاص بك بنجاح.</p>"
-            . "<p><strong>تفاصيل الحجز:</strong></p>"
-            . "<ul>"
-            . "<li>رقم الحجز: " . $reservation_id . "</li>"
-            . "<li>العرض: " . htmlspecialchars($offer_title, ENT_QUOTES, 'UTF-8') . "</li>"
-            . "<li>عدد المرافقين: " . $travelers_count . "</li>"
-            . "<li>السعر الإجمالي: " . number_format($total_price) . " دج</li>"
-            . "<li>الحالة: قيد المراجعة</li>"
-            . "</ul>"
-            . "<p>سيتم التواصل معك قريباً لتأكيد الحجز والحصول على المزيد من المعلومات.</p>"
-            . "<p>فريق ايسيغن للسياحة والأسفار</p>"
+        . "<p>مرحباً " . htmlspecialchars($full_name, ENT_QUOTES, 'UTF-8') . ",</p>"
+        . "<p>تم استقبال طلب الحجز الخاص بك بنجاح.</p>"
+        . "<p><strong>تفاصيل الحجز:</strong></p>"
+        . "<ul>"
+        . "<li>رقم الحجز: " . $reservation_id . "</li>"
+        . "<li>العرض: " . htmlspecialchars($offer_title, ENT_QUOTES, 'UTF-8') . "</li>"
+        . "<li>عدد المرافقين: " . $travelers_count . "</li>"
+        . "<li>السعر الإجمالي: " . number_format($total_price) . " دج</li>"
+        . "<li>الحالة: قيد المراجعة</li>"
+        . "</ul>"
+        . "<p>سيتم التواصل معك قريباً لتأكيد الحجز والحصول على المزيد من المعلومات.</p>"
+        . "<p>فريق ايسيغن للسياحة والأسفار</p>"
         : ($lang === 'fr'
             ? "<h3>Merci pour votre réservation</h3>"
-                . "<p>Bonjour " . htmlspecialchars($full_name, ENT_QUOTES, 'UTF-8') . ",</p>"
-                . "<p>Votre demande de réservation a bien été reçue.</p>"
-                . "<p><strong>Détails de la réservation:</strong></p>"
-                . "<ul>"
-                . "<li>N° de réservation: " . $reservation_id . "</li>"
-                . "<li>Offre: " . htmlspecialchars($offer_title, ENT_QUOTES, 'UTF-8') . "</li>"
-                . "<li>Nombre de voyageurs: " . $travelers_count . "</li>"
-                . "<li>Prix total: " . number_format($total_price) . " DA</li>"
-                . "<li>Statut: En attente d'examen</li>"
-                . "</ul>"
-                . "<p>Nous vous contacterons bientôt pour confirmer votre réservation et plus de détails.</p>"
-                . "<p>L'équipe Isighène Voyages</p>"
+            . "<p>Bonjour " . htmlspecialchars($full_name, ENT_QUOTES, 'UTF-8') . ",</p>"
+            . "<p>Votre demande de réservation a bien été reçue.</p>"
+            . "<p><strong>Détails de la réservation:</strong></p>"
+            . "<ul>"
+            . "<li>N° de réservation: " . $reservation_id . "</li>"
+            . "<li>Offre: " . htmlspecialchars($offer_title, ENT_QUOTES, 'UTF-8') . "</li>"
+            . "<li>Nombre de voyageurs: " . $travelers_count . "</li>"
+            . "<li>Prix total: " . number_format($total_price) . " DA</li>"
+            . "<li>Statut: En attente d'examen</li>"
+            . "</ul>"
+            . "<p>Nous vous contacterons bientôt pour confirmer votre réservation et plus de détails.</p>"
+            . "<p>L'équipe Isighène Voyages</p>"
             : "<h3>Thank you for your booking</h3>"
-                . "<p>Hello " . htmlspecialchars($full_name, ENT_QUOTES, 'UTF-8') . ",</p>"
-                . "<p>Your booking request has been received successfully.</p>"
-                . "<p><strong>Booking Details:</strong></p>"
-                . "<ul>"
-                . "<li>Booking #: " . $reservation_id . "</li>"
-                . "<li>Offer: " . htmlspecialchars($offer_title, ENT_QUOTES, 'UTF-8') . "</li>"
-                . "<li>Number of Travelers: " . $travelers_count . "</li>"
-                . "<li>Total Price: " . number_format($total_price) . " DA</li>"
-                . "<li>Status: Pending Review</li>"
-                . "</ul>"
-                . "<p>We will contact you soon to confirm your booking and provide more details.</p>"
-                . "<p>Isighène Travel & Tourism Team</p>"
+            . "<p>Hello " . htmlspecialchars($full_name, ENT_QUOTES, 'UTF-8') . ",</p>"
+            . "<p>Your booking request has been received successfully.</p>"
+            . "<p><strong>Booking Details:</strong></p>"
+            . "<ul>"
+            . "<li>Booking #: " . $reservation_id . "</li>"
+            . "<li>Offer: " . htmlspecialchars($offer_title, ENT_QUOTES, 'UTF-8') . "</li>"
+            . "<li>Number of Travelers: " . $travelers_count . "</li>"
+            . "<li>Total Price: " . number_format($total_price) . " DA</li>"
+            . "<li>Status: Pending Review</li>"
+            . "</ul>"
+            . "<p>We will contact you soon to confirm your booking and provide more details.</p>"
+            . "<p>Isighène Travel & Tourism Team</p>"
         )
     );
 
@@ -175,11 +175,9 @@ try {
     set_flash_message('success', $t['success_reservation_created']);
     header('Location: offer-detail.php?id=' . $offer_id . '&lang=' . $lang . '#book');
     exit;
-
 } catch (PDOException $e) {
     error_log('Reservation error: ' . $e->getMessage());
     set_flash_message('error', $t['error_reservation_create_failed']);
     header('Location: offer-detail.php?id=' . $offer_id . '&lang=' . $lang . '#book');
     exit;
 }
-?>
