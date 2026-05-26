@@ -232,4 +232,91 @@ return [
     'category_hotel'  => 'Hotel',
     'category_flight' => 'Flight',
     'category_car'    => 'Car',
+    
+    // Error Messages
+    'error_required_field' => 'This field is required.',
+    'error_invalid_email' => 'Please enter a valid email address.',
+    'error_password_short' => 'Password must be at least 8 characters long.',
+    'error_password_mismatch' => 'Passwords do not match.',
+    'error_email_exists' => 'This email is already registered.',
+    'error_fill_all_fields' => 'Please fill in all required fields.',
+    'error_invalid_phone' => 'Please enter a valid phone number.',
+    'error_invalid_passport' => 'Please enter a valid passport number.',
+    'error_name_too_short' => 'Name must be at least 2 characters long.',
+    'error_invalid_date' => 'Please enter a valid date.',
+    'error_future_date_required' => 'Please select a future date.',
+    'error_invalid_price' => 'Please enter a valid price.',
+    'error_invalid_file_type' => 'Invalid file type. Please upload an image.',
+    'error_file_too_large' => 'File size is too large. Maximum 5MB allowed.',
+    'error_image_required' => 'Please upload an offer image.',
+    'error_csrf_token' => 'Security validation failed. Please try again.',
+    'error_unauthorized' => 'You are not authorized to perform this action.',
+    'error_not_found' => 'The requested item was not found.',
+    'error_database' => 'An error occurred while processing your request. Please try again.',
+    'error_email_send' => 'Failed to send email. Please try again later.',
+    
+    // Contact Form Errors
+    'error_contact_name_required' => 'Please enter your name.',
+    'error_contact_email_required' => 'Please enter your email address.',
+    'error_contact_message_required' => 'Please enter your message.',
+    'error_contact_message_short' => 'Message must be at least 10 characters long.',
+    'error_contact_send_failed' => 'Failed to send your message. Please try again.',
+    
+    // Traveler Form Errors
+    'error_traveler_name_required' => 'Traveler name is required.',
+    'error_traveler_name_too_short' => 'Traveler name must be at least 2 characters.',
+    'error_traveler_passport_invalid' => 'Please enter a valid passport number.',
+    'error_traveler_date_required' => 'Birth date is required.',
+    'error_traveler_relationship_required' => 'Please select a relationship.',
+    'error_traveler_add_failed' => 'Failed to add traveler. Please try again.',
+    'error_traveler_update_failed' => 'Failed to update traveler. Please try again.',
+    'error_traveler_delete_failed' => 'Failed to delete traveler. Please try again.',
+    
+    // Offer Form Errors
+    'error_offer_title_required' => 'Please enter the offer title.',
+    'error_offer_description_required' => 'Please enter the offer description.',
+    'error_offer_category_required' => 'Please select an offer category.',
+    'error_offer_price_required' => 'Please enter the offer price.',
+    'error_offer_price_invalid' => 'Price must be a positive number.',
+    'error_offer_days_required' => 'Please enter the number of days.',
+    'error_offer_days_invalid' => 'Days must be at least 1.',
+    'error_offer_location_required' => 'Please enter the destination location.',
+    'error_offer_image_required' => 'Please upload an offer image.',
+    'error_offer_add_failed' => 'Failed to create offer. Please try again.',
+    'error_offer_update_failed' => 'Failed to update offer. Please try again.',
+    'error_offer_delete_failed' => 'Failed to delete offer. Please try again.',
+    
+    // Reservation Errors
+    'error_reservation_name_required' => 'Please enter your full name.',
+    'error_reservation_email_required' => 'Please enter your email address.',
+    'error_reservation_phone_required' => 'Please enter your phone number.',
+    'error_reservation_travelers_required' => 'Please enter the number of travelers.',
+    'error_reservation_travelers_invalid' => 'Number of travelers must be at least 1.',
+    'error_reservation_offer_required' => 'Please select a travel offer.',
+    'error_reservation_date_required' => 'Please select a departure date.',
+    'error_reservation_create_failed' => 'Failed to create reservation. Please try again.',
+    
+    // User Profile Errors
+    'error_profile_name_required' => 'Name is required.',
+    'error_profile_email_required' => 'Email is required.',
+    'error_profile_update_failed' => 'Failed to update profile. Please try again.',
+    'error_password_current_incorrect' => 'Current password is incorrect.',
+    'error_password_change_failed' => 'Failed to change password. Please try again.',
+    
+    // Success Messages
+    'success_contact_sent' => 'Your message has been sent successfully. We will respond soon!',
+    'success_traveler_added' => 'Traveler added successfully.',
+    'success_traveler_updated' => 'Traveler updated successfully.',
+    'success_traveler_deleted' => 'Traveler deleted successfully.',
+    'success_offer_created' => 'Offer created successfully.',
+    'success_offer_updated' => 'Offer updated successfully.',
+    'success_offer_deleted' => 'Offer deleted successfully.',
+    'success_reservation_created' => 'Reservation created successfully.',
+    'success_profile_updated' => 'Profile updated successfully.',
+    'success_password_changed' => 'Password changed successfully.',
+    'success_email_verified' => 'Email verified successfully.',
+    
+    // Warning Messages
+    'warning_confirm_delete' => 'Are you sure you want to delete this item? This action cannot be undone.',
+    'warning_unsaved_changes' => 'You have unsaved changes. Are you sure you want to leave?',
 ];

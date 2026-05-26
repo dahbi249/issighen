@@ -220,4 +220,91 @@ return [
     'category_hotel'  => 'Hôtel',
     'category_flight' => 'Vol',
     'category_car'    => 'Voiture',
+    
+    // Messages d'erreur
+    'error_required_field' => 'Ce champ est obligatoire.',
+    'error_invalid_email' => 'Veuillez entrer une adresse e-mail valide.',
+    'error_password_short' => 'Le mot de passe doit contenir au moins 8 caractères.',
+    'error_password_mismatch' => 'Les mots de passe ne correspondent pas.',
+    'error_email_exists' => 'Cet e-mail est déjà enregistré.',
+    'error_fill_all_fields' => 'Veuillez remplir tous les champs obligatoires.',
+    'error_invalid_phone' => 'Veuillez entrer un numéro de téléphone valide.',
+    'error_invalid_passport' => 'Veuillez entrer un numéro de passeport valide.',
+    'error_name_too_short' => 'Le nom doit contenir au moins 2 caractères.',
+    'error_invalid_date' => 'Veuillez entrer une date valide.',
+    'error_future_date_required' => 'Veuillez sélectionner une date dans le futur.',
+    'error_invalid_price' => 'Veuillez entrer un prix valide.',
+    'error_invalid_file_type' => 'Type de fichier invalide. Veuillez télécharger une image.',
+    'error_file_too_large' => 'La taille du fichier est trop grande. Maximum 5 Mo.',
+    'error_image_required' => 'Veuillez télécharger une image de l\'offre.',
+    'error_csrf_token' => 'La validation de sécurité a échoué. Veuillez réessayer.',
+    'error_unauthorized' => 'Vous n\'êtes pas autorisé à effectuer cette action.',
+    'error_not_found' => 'L\'élément demandé n\'a pas été trouvé.',
+    'error_database' => 'Une erreur s\'est produite lors du traitement de votre demande. Veuillez réessayer.',
+    'error_email_send' => 'Échec de l\'envoi de l\'e-mail. Veuillez réessayer plus tard.',
+    
+    // Erreurs du formulaire de contact
+    'error_contact_name_required' => 'Veuillez entrer votre nom.',
+    'error_contact_email_required' => 'Veuillez entrer votre adresse e-mail.',
+    'error_contact_message_required' => 'Veuillez entrer votre message.',
+    'error_contact_message_short' => 'Le message doit contenir au moins 10 caractères.',
+    'error_contact_send_failed' => 'Échec de l\'envoi de votre message. Veuillez réessayer.',
+    
+    // Erreurs du formulaire de voyageur
+    'error_traveler_name_required' => 'Le nom du voyageur est obligatoire.',
+    'error_traveler_name_too_short' => 'Le nom du voyageur doit contenir au moins 2 caractères.',
+    'error_traveler_passport_invalid' => 'Veuillez entrer un numéro de passeport valide.',
+    'error_traveler_date_required' => 'La date de naissance est obligatoire.',
+    'error_traveler_relationship_required' => 'Veuillez sélectionner une relation.',
+    'error_traveler_add_failed' => 'Échec de l\'ajout du voyageur. Veuillez réessayer.',
+    'error_traveler_update_failed' => 'Échec de la mise à jour du voyageur. Veuillez réessayer.',
+    'error_traveler_delete_failed' => 'Échec de la suppression du voyageur. Veuillez réessayer.',
+    
+    // Erreurs du formulaire d\'offre
+    'error_offer_title_required' => 'Veuillez entrer le titre de l\'offre.',
+    'error_offer_description_required' => 'Veuillez entrer la description de l\'offre.',
+    'error_offer_category_required' => 'Veuillez sélectionner une catégorie d\'offre.',
+    'error_offer_price_required' => 'Veuillez entrer le prix de l\'offre.',
+    'error_offer_price_invalid' => 'Le prix doit être un nombre positif.',
+    'error_offer_days_required' => 'Veuillez entrer le nombre de jours.',
+    'error_offer_days_invalid' => 'Les jours doivent être au moins 1.',
+    'error_offer_location_required' => 'Veuillez entrer la destination.',
+    'error_offer_image_required' => 'Veuillez télécharger une image de l\'offre.',
+    'error_offer_add_failed' => 'Échec de la création de l\'offre. Veuillez réessayer.',
+    'error_offer_update_failed' => 'Échec de la mise à jour de l\'offre. Veuillez réessayer.',
+    'error_offer_delete_failed' => 'Échec de la suppression de l\'offre. Veuillez réessayer.',
+    
+    // Erreurs de réservation
+    'error_reservation_name_required' => 'Veuillez entrer votre nom complet.',
+    'error_reservation_email_required' => 'Veuillez entrer votre adresse e-mail.',
+    'error_reservation_phone_required' => 'Veuillez entrer votre numéro de téléphone.',
+    'error_reservation_travelers_required' => 'Veuillez entrer le nombre de voyageurs.',
+    'error_reservation_travelers_invalid' => 'Le nombre de voyageurs doit être au moins 1.',
+    'error_reservation_offer_required' => 'Veuillez sélectionner une offre de voyage.',
+    'error_reservation_date_required' => 'Veuillez sélectionner une date de départ.',
+    'error_reservation_create_failed' => 'Échec de la création de la réservation. Veuillez réessayer.',
+    
+    // Erreurs du profil utilisateur
+    'error_profile_name_required' => 'Le nom est obligatoire.',
+    'error_profile_email_required' => 'L\'e-mail est obligatoire.',
+    'error_profile_update_failed' => 'Échec de la mise à jour du profil. Veuillez réessayer.',
+    'error_password_current_incorrect' => 'Le mot de passe actuel est incorrect.',
+    'error_password_change_failed' => 'Échec du changement de mot de passe. Veuillez réessayer.',
+    
+    // Messages de succès
+    'success_contact_sent' => 'Votre message a été envoyé avec succès. Nous vous répondrons bientôt!',
+    'success_traveler_added' => 'Voyageur ajouté avec succès.',
+    'success_traveler_updated' => 'Voyageur mis à jour avec succès.',
+    'success_traveler_deleted' => 'Voyageur supprimé avec succès.',
+    'success_offer_created' => 'Offre créée avec succès.',
+    'success_offer_updated' => 'Offre mise à jour avec succès.',
+    'success_offer_deleted' => 'Offre supprimée avec succès.',
+    'success_reservation_created' => 'Réservation créée avec succès.',
+    'success_profile_updated' => 'Profil mis à jour avec succès.',
+    'success_password_changed' => 'Mot de passe changé avec succès.',
+    'success_email_verified' => 'E-mail vérifié avec succès.',
+    
+    // Messages d\'avertissement
+    'warning_confirm_delete' => 'Êtes-vous sûr de vouloir supprimer cet élément? Cette action ne peut pas être annulée.',
+    'warning_unsaved_changes' => 'Vous avez des modifications non enregistrées. Êtes-vous sûr de vouloir partir?',
 ];

@@ -7,7 +7,7 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
 <nav class="navbar" role="navigation">
     <div class="navbar-inner">
 
-        <a href="#" class="navbar-brand">
+        <a href="/issighen/" class="navbar-brand">
             <?php
             $logoFile = $_SERVER['DOCUMENT_ROOT'] . '/issighen/assets/images/logo.png';
             if (file_exists($logoFile)): ?>
@@ -22,7 +22,7 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
         </a>
 
         <div class="navbar-nav" id="navMenu">
-            <a href="/" class="<?= $currentPage === 'index' || $currentPage = '' ? 'active' : '' ?>"><?= htmlspecialchars($t['nav_home']    ?? 'Home') ?></a>
+            <a href="/issighen/" class="<?= $currentPage === 'index' || $currentPage = '' ? 'active' : '' ?>"><?= htmlspecialchars($t['nav_home']    ?? 'Home') ?></a>
             <a href="/issighen/public/pages/offers.php" class="<?= $currentPage === 'offers'  ? 'active' : '' ?>"><?= htmlspecialchars($t['nav_offers']  ?? 'Offers') ?></a>
             <a href="/issighen/public/pages/offers.php?cat=umrah"><?= htmlspecialchars($t['nav_umrah'] ?? 'Umrah & Hajj') ?></a>
             <a href="/issighen/public/pages/offers.php?cat=tourism"><?= htmlspecialchars($t['nav_tourism'] ?? 'Tourism') ?></a>

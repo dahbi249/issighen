@@ -3,7 +3,7 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require '../vendor/autoload.php';
+require __DIR__ . '/../vendor/autoload.php';
 
 function sendHtmlEmail($subject, $bodyHtml, $toEmail, $replyToEmail = null, $replyToName = null)
 {
@@ -12,8 +12,8 @@ function sendHtmlEmail($subject, $bodyHtml, $toEmail, $replyToEmail = null, $rep
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'YOUR_EMAIL@gmail.com';
-        $mail->Password = 'YOUR_PASSWORD_HERE';
+        $mail->Username   = 'YOUR_EMAIL@gmail.com';
+        $mail->Password   = 'YOUR_APP_PASSWORD';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
         $mail->setFrom('YOUR_EMAIL@gmail.com', 'Issighen Agency');
@@ -29,7 +29,7 @@ function sendHtmlEmail($subject, $bodyHtml, $toEmail, $replyToEmail = null, $rep
         $mail->send();
         return true;
     } catch (Exception $e) {
-        error_log("Mailer Error: {$mail->ErrorInfo}");
+        error_log("Mailer Error: {$e->getMessage()} | PHPMailer Info: {$mail->ErrorInfo}");
         return false;
     }
 }

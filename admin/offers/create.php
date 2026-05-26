@@ -55,7 +55,7 @@ $pageTitle = $isEdit ? ($lang === 'ar' ? 'تعديل العرض' : ($lang === 'f
             </div>
             <?= display_flash_messages() ?>
 
-            <form method="POST" action="#" enctype="multipart/form-data" novalidate>
+            <form method="POST" action="process.php?lang=<?= $lang ?>" enctype="multipart/form-data" novalidate>
                 <?php if (function_exists('generate_csrf_token')): ?>
                     <input type="hidden" name="csrf_token" value="<?= generate_csrf_token() ?>">
                 <?php endif; ?>

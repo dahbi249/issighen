@@ -53,9 +53,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     . "<p>Thank you for joining Issighen Agency. We're happy to have you on board and look forward to helping you book your next trip.</p>"
                     . "<p>To access your account, please <a href='" . $loginUrl . "'>log in here</a>.</p>"
                     . "<p>If you need any help, feel free to reply to this email.</p>";
-                sendHtmlEmail($subject, $body, $email);
-
-                set_flash_message('success', 'Registration successful. You can now log in.');
+                $emailSent = sendHtmlEmail($subject, $body, $email);
+                if ($emailSent) {
+                    set_flash_message('success', 'Registration successful. You can now log in.');
+                } else {
+                    error_log('Welcome email failed to send for registered user: ' . $email);
+                    set_flash_message('warning', 'Registration successful, but the welcome email could not be sent. Please check your email settings.');
+                }
                 header('Location: /issighen/public/auth/login.php');
                 exit;
             } catch (PDOException $e) {

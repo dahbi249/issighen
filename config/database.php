@@ -2,7 +2,7 @@
 // config/database.php
 
 define('DB_HOST', 'localhost');
-define('DB_NAME', 'tourism_agency'); // Replace with your DB name
+define('DB_NAME', 'isseghen'); // Replace with your DB name
 define('DB_USER', 'root');
 define('DB_PASS', '');
 

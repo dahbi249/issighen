@@ -151,7 +151,7 @@ $catClass = 'cat-' . $offer['cat'];
                             </button>
                         <?php endif; ?>
 
-                        <form action="#" method="POST" novalidate>
+                        <form action="reservation_process.php?lang=<?= $lang ?>" method="POST" novalidate>
                             <?php if (function_exists('generate_csrf_token')): ?>
                                 <input type="hidden" name="csrf_token" value="<?= generate_csrf_token() ?>">
                             <?php endif; ?>
@@ -160,6 +160,10 @@ $catClass = 'cat-' . $offer['cat'];
                             <div class="form-group">
                                 <label><?= htmlspecialchars($t['booking_full_name']) ?></label>
                                 <input type="text" name="full_name" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label><?= htmlspecialchars($t['booking_email']) ?></label>
+                                <input type="email" name="email" class="form-control" required>
                             </div>
                             <div class="form-group">
                                 <label><?= htmlspecialchars($t['booking_phone']) ?></label>

@@ -88,10 +88,11 @@ $dir  = $lang === 'ar' ? 'rtl' : 'ltr';
             <button class="modal-close" data-dismiss="modal"><i class="fas fa-times"></i></button>
             <div class="modal-title"><?= htmlspecialchars($t['travelers_add']) ?></div>
             <div class="modal-subtitle"><?= $lang === 'ar' ? 'أدخل بيانات المرافق' : ($lang === 'fr' ? 'Entrez les informations du voyageur' : 'Enter traveler information') ?></div>
-            <form method="POST" action="#" novalidate>
+            <form method="POST" action="travelers_process.php?lang=<?= $lang ?>" novalidate>
                 <?php if (function_exists('generate_csrf_token')): ?>
                     <input type="hidden" name="csrf_token" value="<?= generate_csrf_token() ?>">
                 <?php endif; ?>
+                <input type="hidden" name="action" value="add">
                 <div class="form-group">
                     <label><?= htmlspecialchars($t['travelers_name']) ?></label>
                     <input type="text" name="full_name" class="form-control" required>

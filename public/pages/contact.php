@@ -44,7 +44,7 @@ $dir  = $lang === 'ar' ? 'rtl' : 'ltr';
                             <h3><?= htmlspecialchars($t['contact_form_title']) ?></h3>
                         </div>
                         <div class="card-body">
-                            <form action="#" method="POST" novalidate>
+                            <form action="contact_process.php?lang=<?= $lang ?>" method="POST" novalidate>
                                 <?php if (function_exists('generate_csrf_token')): ?>
                                     <input type="hidden" name="csrf_token" value="<?= generate_csrf_token() ?>">
                                 <?php endif; ?>

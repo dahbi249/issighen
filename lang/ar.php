@@ -220,4 +220,91 @@ return [
     'category_hotel'  => 'فندق',
     'category_flight' => 'طيران',
     'category_car'    => 'سيارة',
+    
+    // رسائل الخطأ
+    'error_required_field' => 'هذا الحقل مطلوب.',
+    'error_invalid_email' => 'يرجى إدخال عنوان بريد إلكتروني صحيح.',
+    'error_password_short' => 'كلمة المرور يجب أن تكون 8 أحرف على الأقل.',
+    'error_password_mismatch' => 'كلمات المرور غير متطابقة.',
+    'error_email_exists' => 'هذا البريد الإلكتروني مسجل بالفعل.',
+    'error_fill_all_fields' => 'يرجى ملء جميع الحقول المطلوبة.',
+    'error_invalid_phone' => 'يرجى إدخال رقم هاتف صحيح.',
+    'error_invalid_passport' => 'يرجى إدخال رقم جواز سفر صحيح.',
+    'error_name_too_short' => 'الاسم يجب أن يكون على الأقل حرفين.',
+    'error_invalid_date' => 'يرجى إدخال تاريخ صحيح.',
+    'error_future_date_required' => 'يرجى اختيار تاريخ في المستقبل.',
+    'error_invalid_price' => 'يرجى إدخال سعر صحيح.',
+    'error_invalid_file_type' => 'نوع الملف غير صحيح. يرجى تحميل صورة.',
+    'error_file_too_large' => 'حجم الملف كبير جداً. الحد الأقصى 5 ميجابايت.',
+    'error_image_required' => 'يرجى تحميل صورة العرض.',
+    'error_csrf_token' => 'فشل التحقق من الأمان. يرجى المحاولة مرة أخرى.',
+    'error_unauthorized' => 'أنت غير مخول بأداء هذا الإجراء.',
+    'error_not_found' => 'العنصر المطلوب لم يتم العثور عليه.',
+    'error_database' => 'حدث خطأ أثناء معالجة طلبك. يرجى المحاولة مرة أخرى.',
+    'error_email_send' => 'فشل إرسال البريد الإلكتروني. يرجى المحاولة لاحقاً.',
+    
+    // أخطاء نموذج الاتصال
+    'error_contact_name_required' => 'يرجى إدخال اسمك.',
+    'error_contact_email_required' => 'يرجى إدخال عنوان بريدك الإلكتروني.',
+    'error_contact_message_required' => 'يرجى إدخال رسالتك.',
+    'error_contact_message_short' => 'الرسالة يجب أن تكون 10 أحرف على الأقل.',
+    'error_contact_send_failed' => 'فشل إرسال رسالتك. يرجى المحاولة مرة أخرى.',
+    
+    // أخطاء نموذج المرافقين
+    'error_traveler_name_required' => 'اسم المرافق مطلوب.',
+    'error_traveler_name_too_short' => 'اسم المرافق يجب أن يكون على الأقل حرفين.',
+    'error_traveler_passport_invalid' => 'يرجى إدخال رقم جواز سفر صحيح.',
+    'error_traveler_date_required' => 'تاريخ الميلاد مطلوب.',
+    'error_traveler_relationship_required' => 'يرجى اختيار درجة القرب.',
+    'error_traveler_add_failed' => 'فشل إضافة المرافق. يرجى المحاولة مرة أخرى.',
+    'error_traveler_update_failed' => 'فشل تحديث المرافق. يرجى المحاولة مرة أخرى.',
+    'error_traveler_delete_failed' => 'فشل حذف المرافق. يرجى المحاولة مرة أخرى.',
+    
+    // أخطاء نموذج العروض
+    'error_offer_title_required' => 'يرجى إدخال عنوان العرض.',
+    'error_offer_description_required' => 'يرجى إدخال وصف العرض.',
+    'error_offer_category_required' => 'يرجى اختيار فئة العرض.',
+    'error_offer_price_required' => 'يرجى إدخال سعر العرض.',
+    'error_offer_price_invalid' => 'السعر يجب أن يكون رقم موجب.',
+    'error_offer_days_required' => 'يرجى إدخال عدد الأيام.',
+    'error_offer_days_invalid' => 'الأيام يجب أن تكون على الأقل 1.',
+    'error_offer_location_required' => 'يرجى إدخال مكان الوجهة.',
+    'error_offer_image_required' => 'يرجى تحميل صورة العرض.',
+    'error_offer_add_failed' => 'فشل إنشاء العرض. يرجى المحاولة مرة أخرى.',
+    'error_offer_update_failed' => 'فشل تحديث العرض. يرجى المحاولة مرة أخرى.',
+    'error_offer_delete_failed' => 'فشل حذف العرض. يرجى المحاولة مرة أخرى.',
+    
+    // أخطاء الحجز
+    'error_reservation_name_required' => 'يرجى إدخال اسمك الكامل.',
+    'error_reservation_email_required' => 'يرجى إدخال عنوان بريدك الإلكتروني.',
+    'error_reservation_phone_required' => 'يرجى إدخال رقم هاتفك.',
+    'error_reservation_travelers_required' => 'يرجى إدخال عدد المرافقين.',
+    'error_reservation_travelers_invalid' => 'عدد المرافقين يجب أن يكون على الأقل 1.',
+    'error_reservation_offer_required' => 'يرجى اختيار عرض سياحي.',
+    'error_reservation_date_required' => 'يرجى اختيار تاريخ المغادرة.',
+    'error_reservation_create_failed' => 'فشل إنشاء الحجز. يرجى المحاولة مرة أخرى.',
+    
+    // أخطاء ملف المستخدم الشخصي
+    'error_profile_name_required' => 'الاسم مطلوب.',
+    'error_profile_email_required' => 'البريد الإلكتروني مطلوب.',
+    'error_profile_update_failed' => 'فشل تحديث الملف الشخصي. يرجى المحاولة مرة أخرى.',
+    'error_password_current_incorrect' => 'كلمة المرور الحالية غير صحيحة.',
+    'error_password_change_failed' => 'فشل تغيير كلمة المرور. يرجى المحاولة مرة أخرى.',
+    
+    // رسائل النجاح
+    'success_contact_sent' => 'تم إرسال رسالتك بنجاح. سنرد عليك قريباً!',
+    'success_traveler_added' => 'تمت إضافة المرافق بنجاح.',
+    'success_traveler_updated' => 'تم تحديث بيانات المرافق بنجاح.',
+    'success_traveler_deleted' => 'تم حذف المرافق بنجاح.',
+    'success_offer_created' => 'تم إنشاء العرض بنجاح.',
+    'success_offer_updated' => 'تم تحديث العرض بنجاح.',
+    'success_offer_deleted' => 'تم حذف العرض بنجاح.',
+    'success_reservation_created' => 'تم إنشاء الحجز بنجاح.',
+    'success_profile_updated' => 'تم تحديث الملف الشخصي بنجاح.',
+    'success_password_changed' => 'تم تغيير كلمة المرور بنجاح.',
+    'success_email_verified' => 'تم التحقق من البريد الإلكتروني بنجاح.',
+    
+    // رسائل التحذير
+    'warning_confirm_delete' => 'هل أنت متأكد من رغبتك في حذف هذا العنصر؟ لا يمكن التراجع عن هذا الإجراء.',
+    'warning_unsaved_changes' => 'لديك تغييرات لم يتم حفظها. هل أنت متأكد من رغبتك في المغادرة؟',
 ];

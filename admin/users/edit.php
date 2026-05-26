@@ -60,7 +60,7 @@ $user = ['id' => $uid, 'name' => 'محمد أمين بوعلام', 'email' => 'a
                         <h3><?= $lang === 'ar' ? 'بيانات المستخدم' : ($lang === 'fr' ? 'Informations utilisateur' : 'User Information') ?></h3>
                     </div>
                     <div class="card-body">
-                        <form method="POST" action="#" novalidate>
+                        <form method="POST" action="process.php?lang=<?= $lang ?>" novalidate>
                             <?php if (function_exists('generate_csrf_token')): ?>
                                 <input type="hidden" name="csrf_token" value="<?= generate_csrf_token() ?>">
                             <?php endif; ?>
